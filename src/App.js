@@ -1,7 +1,12 @@
+import "devextreme/dist/css/dx.common.css";
+import "devextreme/dist/css/dx.light.compact.css";
 import Navbar from "./components/Navbar/Navbar";
 import { useStyles } from "./App_styles";
 import { Grid } from "@mui/material";
 import FileMenu from "./components/FileMenu/FileMenu";
+import PurchaseForms from "./components/PurchaseForms/PurchaseForms";
+// import "devextreme/dist/css/dx.light.compact.css";
+import DataGrid from "./components/DataGrid/DataGrid.component"
 
 function App() {
   const classes = useStyles();
@@ -13,6 +18,12 @@ function App() {
         </Grid>
         <Grid item sm={12}>
           <FileMenu />
+        </Grid>
+        <Grid item sm={12}>
+          <PurchaseForms />
+        </Grid>
+        <Grid item sm={12}>
+          <DataGrid />
         </Grid>
       </Grid>
     </div>

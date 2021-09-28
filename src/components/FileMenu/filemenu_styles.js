@@ -3,7 +3,7 @@ import { makeStyles } from "@mui/styles";
 const useStyles = makeStyles((theme) => ({
   filemenu: {
     display: "flex",
-    padding: "0.5rem",
+    padding: "0.5rem", //comment this out, if you want the menu to shrink
     margin: "0",
   },
   filemenu_item: {
@@ -11,9 +11,11 @@ const useStyles = makeStyles((theme) => ({
     margin: "0.3rem 0.5rem 0.3rem 0.5rem",
     display: "flex",
     fontSize: "0.9rem",
+    padding: "0.2rem",
     "&:hover": {
       cursor: "pointer",
       textDecoration: "underline",
+      backgroundColor: "#F1f1f1",
     },
   },
   filemenue_icons: {
@@ -23,7 +25,6 @@ const useStyles = makeStyles((theme) => ({
   },
   closebtn: {
     color: "#c23727",
-    // backgroundColor: "red",
   },
   saveBtn: {
     color: "#357c95",
