@@ -6,7 +6,8 @@ import { Grid } from "@mui/material";
 import FileMenu from "./components/FileMenu/FileMenu";
 import PurchaseForms from "./components/PurchaseForms/PurchaseForms";
 // import "devextreme/dist/css/dx.light.compact.css";
-import DataGrid from "./components/DataGrid/DataGrid.component"
+import DataGrid from "./components/DataGrid/DataGrid.component";
+import TaxAndDiscounts from "./components/TaxAndDiscounts/TaxAndDiscounts";
 
 function App() {
   const classes = useStyles();
@@ -24,6 +25,9 @@ function App() {
         </Grid>
         <Grid item sm={12}>
           <DataGrid />
+        </Grid>
+        <Grid item sm={12}>
+          <TaxAndDiscounts />
         </Grid>
       </Grid>
     </div>

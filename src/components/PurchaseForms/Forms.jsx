@@ -28,6 +28,7 @@ function Forms() {
     );
   }
 
+  //store data in redux
   const dropDownOptions = {
     supplier: ["IGMA", "RootLabs"],
     JobNumber: ["DZ01", "DZ02", "DZ03"],
@@ -57,15 +58,36 @@ function Forms() {
                   items: dropDownOptions.supplier,
                   searchEnabled: true,
                   value: "",
+                  height: "1.7rem",
                 }}
               />
 
               <GroupItem caption="Address" cssClass={classes.groupItem}>
-                <SimpleItem dataField="Address 1" cssClass={classes.item} />
-                <SimpleItem dataField="Address 2" cssClass={classes.item} />
-                <SimpleItem dataField="Suburb" cssClass={classes.item} />
-                <SimpleItem dataField="State" cssClass={classes.item} />
-                <SimpleItem dataField="Postal Code" cssClass={classes.item} />
+                <SimpleItem
+                  dataField="Address 1"
+                  cssClass={classes.item}
+                  editorOptions={{ height: "1.7rem" }}
+                />
+                <SimpleItem
+                  dataField="Address 2"
+                  cssClass={classes.item}
+                  editorOptions={{ height: "1.7rem" }}
+                />
+                <SimpleItem
+                  dataField="Suburb"
+                  cssClass={classes.item}
+                  editorOptions={{ height: "1.7rem" }}
+                />
+                <SimpleItem
+                  dataField="State"
+                  cssClass={classes.item}
+                  editorOptions={{ height: "1.7rem" }}
+                />
+                <SimpleItem
+                  dataField="Postal Code"
+                  cssClass={classes.item}
+                  editorOptions={{ height: "1.7rem" }}
+                />
               </GroupItem>
             </GroupItem>
           </Tab>
@@ -80,14 +102,31 @@ function Forms() {
           <Tab title="Document" colCount={2} tabRender={tabRenderStyles}>
             {/* Make form Responsive */}
             <ColCountByScreen xs={1} sm={1} md={1} lg={2} />
-            <SimpleItem dataField="Purchase Order No" cssClass={classes.item} />
-            <SimpleItem dataField="PO Date" cssClass={classes.item} />
+            <SimpleItem
+              dataField="Purchase Order No"
+              cssClass={classes.item}
+              editorOptions={{ height: "1.7rem" }}
+            />
+            <SimpleItem
+              dataField="PO Date"
+              cssClass={classes.item}
+              editorOptions={{ height: "1.7rem" }}
+            />
             <SimpleItem
               dataField="Goods Received Note No"
               cssClass={classes.item}
+              editorOptions={{ height: "1.7rem" }}
             />
-            <SimpleItem dataField="Required Branch" cssClass={classes.item} />
-            <SimpleItem dataField="External Order No" cssClass={classes.item} />
+            <SimpleItem
+              dataField="Required Branch"
+              cssClass={classes.item}
+              editorOptions={{ height: "1.7rem" }}
+            />
+            <SimpleItem
+              dataField="External Order No"
+              cssClass={classes.item}
+              editorOptions={{ height: "1.7rem" }}
+            />
             <SimpleItem
               dataField="Branch"
               cssClass={classes.item}
@@ -96,11 +135,13 @@ function Forms() {
                 items: dropDownOptions.Branch,
                 searchEnabled: true,
                 value: "",
+                height: "1.7rem",
               }}
             />
             <SimpleItem
               dataField="Supplier Invoice No"
               cssClass={classes.item}
+              editorOptions={{ height: "1.7rem" }}
             />
             <SimpleItem
               dataField="Type"
@@ -110,6 +151,7 @@ function Forms() {
                 items: dropDownOptions.Type,
                 searchEnabled: true,
                 value: "",
+                height: "1.7rem",
               }}
             />
             <SimpleItem
@@ -120,6 +162,7 @@ function Forms() {
                 items: dropDownOptions.JobNumber,
                 searchEnabled: true,
                 value: "",
+                height: "1.7rem",
               }}
             />
             <EmptyItem colSpan={1} cssClass={classes.item} />
@@ -130,10 +173,15 @@ function Forms() {
                 items: dropDownOptions.orderFor,
                 searchEnabled: true,
                 value: "",
+                height: "1.7rem",
               }}
               cssClass={classes.item}
             />
-            <SimpleItem dataField="Drop off Date" cssClass={classes.item} />
+            <SimpleItem
+              dataField="Drop off Date"
+              cssClass={classes.item}
+              editorOptions={{ height: "1.7rem" }}
+            />
             <SimpleItem
               dataField="Delivery Method"
               editorType="dxSelectBox"
@@ -141,10 +189,15 @@ function Forms() {
                 items: dropDownOptions.deliveryMethod,
                 searchEnabled: true,
                 value: "",
+                height: "1.7rem",
               }}
               cssClass={classes.item}
             />
-            <SimpleItem dataField="Pickup Date" cssClass={classes.item} />
+            <SimpleItem
+              dataField="Pickup Date"
+              cssClass={classes.item}
+              editorOptions={{ height: "1.7rem" }}
+            />
             <SimpleItem
               dataField="Sales Order"
               editorType="dxSelectBox"
@@ -152,6 +205,7 @@ function Forms() {
                 items: dropDownOptions.salesOrder,
                 searchEnabled: true,
                 value: "",
+                height: "1.7rem",
               }}
               cssClass={classes.item}
             />
@@ -163,6 +217,7 @@ function Forms() {
                 items: dropDownOptions.RequestedBy,
                 searchEnabled: true,
                 value: "",
+                height: "1.7rem",
               }}
             />
             <SimpleItem
@@ -174,6 +229,7 @@ function Forms() {
                 items: dropDownOptions.customer,
                 searchEnabled: true,
                 value: "",
+                height: "1.7rem",
               }}
             />
           </Tab>
