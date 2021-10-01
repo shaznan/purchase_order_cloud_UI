@@ -8,6 +8,7 @@ import PurchaseForms from "./components/PurchaseForms/PurchaseForms";
 // import "devextreme/dist/css/dx.light.compact.css";
 import DataGrid from "./components/DataGrid/DataGrid.component";
 import TaxAndDiscounts from "./components/TaxAndDiscounts/TaxAndDiscounts";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   const classes = useStyles();
@@ -28,6 +29,9 @@ function App() {
         </Grid>
         <Grid item sm={12}>
           <TaxAndDiscounts />
+        </Grid>
+        <Grid>
+          <Footer />
         </Grid>
       </Grid>
     </div>
